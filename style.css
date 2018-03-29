@@ -1,0 +1,14 @@
+body {
+    font-family: Helvetica;
+}
+
+.clothingSuggestion {
+    position: relative;
+    left: 200px;
+    top: -190px;
+
+}
+
+.table {
+    position: relative;
+}

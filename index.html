@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+</ lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<div id="weather"></div>
+
+<table>
+    <tr>
+        <td>
+            <input type="text" id="inputZip" value="94705" size="25">
+        </td>
+        <td>
+            <select id="style">
+                <option value="0">Style</option>
+                <option value="1">Work</option>
+                <option value="2">Leisure</option>
+                <option value="3">Formal</option>
+            </select>
+        </td>
+        <td>
+            <select id="gender">
+                <!--<option value="0">Gender</option>-->
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+            </select>
+        </td>
+        <td>
+            <button id="zipButton">Search</button>
+
+        </td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td>
+            <table id="table" border="0"></table>
+        </td>
+        <td>
+            <div id="clothing"></div>
+        </td>
+    </tr>
+
+
+</table>
+
+
+<table class="clothingSuggestion" id="75MaleWork">
+    <tr><td>Our pick for you:</td></tr>
+    <tr><td>Top: Polo shirt</td></tr>
+    <tr><td>Bottom: Slacks</td></tr>
+    <tr><td>Footwear: Dress shoes</td></tr>
+    <tr><td>Jacket: None</td></tr>
+    <tr><td>Accessories: A watch</td></tr>
+</table>
+
+<table class="clothingSuggestion" id="50MaleWork">
+    <tr><td>Our pick for you:</td></tr>
+    <tr><td>Top: Button Down</td></tr>
+    <tr><td>Bottom: Slacks</td></tr>
+    <tr><td>Footwear: Dress shoes</td></tr>
+    <tr><td>Jacket: Light sweater or jacket</td></tr>
+    <tr><td>Accessories: A watch</td></tr>
+</table>
+
+
+<table class="clothingSuggestion" id="-30MaleWork">
+    <tr><td>Our pick for you:</td></tr>
+    <tr><td>Top: Button Down</td></tr>
+    <tr><td>Bottom: Slacks</td></tr>
+    <tr><td>Footwear: Dress shoes</td></tr>
+    <tr><td>Jacket: Insulated or fleece</td></tr>
+    <tr><td>Accessories: Hat, gloves, and a scarf</td></tr>
+</table>
+
+<table class="clothingSuggestion" id="75MaleLeisure">
+    <tr><td>Our pick for you:</td></tr>
+    <tr><td>Top: T-Shirt</td></tr>
+    <tr><td>Bottom: Shorts</td></tr>
+    <tr><td>Footwear: Sandals</td></tr>
+    <tr><td>Jacket: None</td></tr>
+    <tr><td>Accessories: Hat, sunglasses</td></tr>
+</table>
+
+<table class="clothingSuggestion" id="50MaleLeisure">
+    <tr><td>Our pick for you:</td></tr>
+    <tr><td>Top: T-Shirt</td></tr>
+    <tr><td>Bottom: Jeans</td></tr>
+    <tr><td>Footwear: Tennis shoes</td></tr>
+    <tr><td>Jacket: Sweatshirt</td></tr>
+    <tr><td>Accessories: None</td></tr>
+</table>
+
+<table class="clothingSuggestion" id="20MaleLeisure">
+    <tr><td>Our pick for you:</td></tr>
+    <tr><td>Top: Long-sleeved shirt</td></tr>
+    <tr><td>Bottom: Jeans</td></tr>
+    <tr><td>Footwear: Tennis shoes or boots</td></tr>
+    <tr><td>Jacket: Fleece or insulated</td></tr>
+    <tr><td>Accessories: Warm hat, gloves, scarf</td></tr>
+</table>
+
+<table class="clothingSuggestion" id="MaleFormal">
+    <tr><td>Our pick for you:</td></tr>
+    <tr><td>Top: Button-down</td></tr>
+    <tr><td>Bottom: Slacks</td></tr>
+    <tr><td>Footwear: Dress shoes</td></tr>
+    <tr><td>Jacket: Suit jacket</td></tr>
+    <tr><td>Accessories: Watch</td></tr>
+</table>
+
+<table class="clothingSuggestion" id="75FemaleWork">
+    <tr><td>Our pick for you:</td></tr>
+    <tr><td>Top: Button down</td></tr>
+    <tr><td>Bottom: Black dress pants</td></tr>
+    <tr><td>Footwear: Flats</td></tr>
+    <tr><td>Jacket: None</td></tr>
+    <tr><td>Accessories: A watch, and a necklace</td></tr>
+</table>
+
+<table class="clothingSuggestion" id="50FemaleWork">
+    <tr><td>Our pick for you:</td></tr>
+    <tr><td>Top: Button Down</td></tr>
+    <tr><td>Bottom: Navy dress pants</td></tr>
+    <tr><td>Footwear: Flats</td></tr>
+    <tr><td>Jacket: Light sweater or jacket</td></tr>
+    <tr><td>Accessories: A watch</td></tr>
+</table>
+
+<table class="clothingSuggestion" id="20FemaleWork">
+    <tr><td>Our pick for you:</td></tr>
+    <tr><td>Top: Button Down</td></tr>
+    <tr><td>Bottom: Black dress pants</td></tr>
+    <tr><td>Footwear: Boots</td></tr>
+    <tr><td>Jacket: Insulated or fleece</td></tr>
+    <tr><td>Accessories: Hat, gloves, and a scarf</td></tr>
+</table>
+
+<table class="clothingSuggestion" id="75FemaleLeisure">
+    <tr><td>Our pick for you:</td></tr>
+    <tr><td>Top: T-Shirt</td></tr>
+    <tr><td>Bottom: Shorts</td></tr>
+    <tr><td>Footwear: Sandals</td></tr>
+    <tr><td>Jacket: None</td></tr>
+    <tr><td>Accessories: Hat, sunglasses</td></tr>
+</table>
+
+<table class="clothingSuggestion" id="50FemaleLeisure">
+    <tr><td>Our pick for you:</td></tr>
+    <tr><td>Top: T-Shirt</td></tr>
+    <tr><td>Bottom: Jeans or leggings</td></tr>
+    <tr><td>Footwear: Tennis shoes</td></tr>
+    <tr><td>Jacket: Sweatshirt</td></tr>
+    <tr><td>Accessories: None</td></tr>
+</table>
+
+<table class="clothingSuggestion" id="20FemaleLeisure">
+    <tr><td>Our pick for you:</td></tr>
+    <tr><td>Top: Long-sleeved shirt</td></tr>
+    <tr><td>Bottom: Jeans</td></tr>
+    <tr><td>Footwear: Tennis shoes or boots</td></tr>
+    <tr><td>Jacket: Fleece or insulated</td></tr>
+    <tr><td>Accessories: Warm hat, gloves, scarf</td></tr>
+</table>
+
+<table class="clothingSuggestion" id="75FemaleFormal">
+    <tr><td>Our pick for you:</td></tr>
+    <tr><td>Dress: Knee-length flare dress</td></tr>
+    <tr><td>Footwear: Sandals</td></tr>
+    <tr><td>Jacket: None</td></tr>
+    <tr><td>Accessories: Clutch, earrings</td></tr>
+</table>
+
+<table class="clothingSuggestion" id="50FemaleFormal">
+    <tr><td>Our pick for you:</td></tr>
+    <tr><td>Dress: Floor length, short or no sleeves</td></tr>
+    <tr><td>Footwear: High heels</td></tr>
+    <tr><td>Jacket: None</td></tr>
+    <tr><td>Accessories: Clutch, necklace</td></tr>
+</table>
+
+
+<table class="clothingSuggestion" id="20FemaleFormal">
+    <tr><td>Our pick for you:</td></tr>
+    <tr><td>Dress: Floor length, half or full sleeves</td></tr>
+    <tr><td>Footwear: High heels</td></tr>
+    <tr><td>Jacket: Fur</td></tr>
+    <tr><td>Accessories: Clutch, necklace</td></tr>
+</table>
+
+<!--Weather for Santa Fe, NM: 87505, Utah weather: 84028-->
+</body>
+</html>
+
